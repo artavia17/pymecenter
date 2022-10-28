@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>Home</title>
+</head>
+<body>
+
+      <!-- Nav Escritorios -->
+
+        <nav class="navbar navbar-expand-lg bg-white shadow px-4 mostrar_escritorio">
+            <div class="container-fluid d-flex justify-content-between">
+              <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <img src="./img/logo_pime_center.png" alt="logo de PIMECENTER" width="60">
+                <span class="bangla_mn mt-3 color_green">PIMECENTER</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="" id="navbarNavDropdown">
+                <ul class="navbar-nav me-5">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link color_orange telugu_sangam_mn mt-2 fw-bold" aria-current="page" href="#">Categorias</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link color_orange telugu_sangam_mn mt-2 fw-bold" href="#">Empresas</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link color_orange telugu_sangam_mn mt-2 fw-bold" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link color_orange telugu_sangam_mn mt-2 fw-bold" href="#">Eventos</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link color_orange telugu_sangam_mn mt-2 fw-bold" href="#">Servicios</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <a class="login" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <svg class="color_orange" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg>
+                </a>
+
+                <!-- Modal -->
+
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 bangla_mn mt-3 color_green" id="staticBackdropLabel">INGRESAR AHORA</h1>
+                        <button type="button" class="btn-close pe-3 ocultar_shadow_focus" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label color_orange telugu_sangam_mn fw-bold">Correo electrónico</label>
+                            <input type="email" class="form-control ocultar_shadow_focus" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1 " class="form-label color_orange telugu_sangam_mn fw-bold">Contraseña</label>
+                            <input type="password" class="form-control ocultar_shadow_focus" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input ocultar_shadow_focus" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordar usuario</label>
+                          </div>
+                          <div id="emailHelp" class="form-text">¿Aun no tienes una cuenta? <a href="#">Registrate Ahora</a></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger ocultar_shadow_focus" data-bs-dismiss="modal">CANCELAR</button>
+                        <button type="button" class="btn background_orange ocultar_shadow_focus">INGRESAR</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- End Modal -->
+
+
+              </div>
+            </div>
+          </nav>
+
+          <!-- Nav Movil -->
+
+          <nav class="navbar navbar-expand-lg bg-white shadow mostrar_movile">
+            <div class="container-fluid d-flex justify-content-between">
+              <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <img src="./img/logo_pime_center.png" alt="logo de PIMECENTER" width="60">
+                <span class="bangla_mn mt-3 color_green">PIMECENTER</span>
+              </a>
+              <button class="navbar-toggler ocultar_shadow_focus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header border-bottom p-2">
+                  <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                    <img src="./img/logo_pime_center.png" alt="logo de PIMECENTER" width="60">
+                    <span class="bangla_mn mt-3 color_green">PIMECENTER</span>
+                  </a>
+                  <button type="button" class="btn-close pe-5 ocultar_shadow_focus" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                      <a class="nav-link color_orange telugu_sangam_mn mt-2  text-center fs-2" aria-current="page" href="#">Categorias</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link color_orange telugu_sangam_mn mt-2  text-center fs-2" href="#">Empresas</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link color_orange telugu_sangam_mn mt-2  text-center fs-2" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link color_orange telugu_sangam_mn mt-2  text-center fs-2" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link color_orange telugu_sangam_mn mt-2  text-center fs-2" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link color_orange telugu_sangam_mn mt-2  text-center fs-2" href="#">Iniciar Sesion</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <header>
+
+              <section class="contenido_titulo">
+                <div>
+                  <span class="subtitulo bangla_mn"> <hr/> Pimes Costa Rica</span>
+                  <h1 class="telugu_sangam_mn fw-bold mt-3">BRINDANDO EL MEJOR <br/> SERVICIO A LOS USUARIOS</h1>
+                </div>
+                <label  id="buscador" for="buscar">
+                    <input type="text" placeholder="Buscar producto" id="buscar" class="bangla_mn">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                    </a>
+                </label>
+              </section>
+              <section class="features">
+                <ul>
+                  <li><a class="bangla_mn" href="#">PRODUCTOS</a></li>
+                  <li><a class="bangla_mn" href="#">EVENTOS</a></li>
+                  <li><a class="bangla_mn" href="#">SERVICIOS</a></li>
+                </ul>
+              </section>
+
+          </header>   
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</html>

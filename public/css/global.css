@@ -1,0 +1,85 @@
+/* Import Style Componets */
+@import url('./nav/style.css');
+@import url('./header/style.css');
+
+/* Import Fonts */
+
+@font-face {
+    font-family: bangla_mn;
+    src: url(../fonts/Bangla\ MN.ttf);
+}
+
+@font-face {
+    font-family: telugu_sangam_mn;
+    src: url(../fonts/Telugu\ Sangam\ MN.ttc);
+}
+
+/* Class Fonts */
+
+.bangla_mn{
+    font-family: bangla_mn;
+}
+
+.telugu_sangam_mn{
+    font-family: telugu_sangam_mn;
+}
+
+/* Class color */
+
+.color_green{
+    color: #3A5828;
+    transition: .2s linear;
+}
+
+.color_orange{
+    color: #DF6C24;
+    transition: .2s linear;
+}
+
+/* Class Background */
+
+.background_green{
+    background-color: #3A5828;
+    transition: .2s linear;
+    color: white;
+}
+
+.background_orange{
+    background-color: #DF6C24;
+    transition: .2s linear;
+    color: white;
+    opacity: 1;
+}
+
+.background_orange:hover{
+    background-color: #DF6C24;
+    transition: .2s linear;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Mostrar y ocultar contenedores */
+
+.mostrar_escritorio{
+    display: block;
+}
+
+.mostrar_movile{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .mostrar_escritorio{
+        display: none;
+    }
+    
+    .mostrar_movile{
+        display: block;
+    }   
+}
+
+/* Ocultar box shadow */
+
+.ocultar_shadow_focus:focus{
+    box-shadow: none !important;
+}
